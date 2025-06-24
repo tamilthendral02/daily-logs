@@ -1,0 +1,17 @@
+from abc import ABC,abstractmethod
+class Birds(ABC):
+    @abstractmethod
+    def fly_sound(self):
+        pass
+class parrot(Birds):
+    def fly_sound(self):
+        return "happy environe"
+class duck(Birds):
+    def fly_sound(self):
+        return "happy environe"
+    
+p=parrot()
+d=duck()
+print(p.fly_sound())
+print(d.fly_sound())
+
